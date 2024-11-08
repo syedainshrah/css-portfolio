@@ -1,0 +1,29 @@
+.about-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Center align */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center align text */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around; /* Space between cards */
+    margin-top: 20px; /* Space above cards */
+    flex-wrap: wrap; /* Allow cards to wrap */
+  }
+  
+  .card {
+    background-color: #557173; /* Card background color */
+    border: 1px solid #164f58; /* Border around cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 30%; /* Width of each card */
+    margin: 10px; /* Margin around cards */
+    transition: transform 0.2s; /* Transition for hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  

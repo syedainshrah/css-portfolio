@@ -1,0 +1,20 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark color combination */
+    color: white;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Increased width */
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
