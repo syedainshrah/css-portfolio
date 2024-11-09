@@ -10,13 +10,15 @@ main {
 }
 
 /* Heading Style (h1) */
-h1 {
-  color: #4b92e3; /* Change the color to your desired color, e.g., blue */
-  font-family: 'Arial', sans-serif; /* Font family */
-  font-size: 2rem; /* Heading font size */
-  margin: 10px 0; /* Reduced top and bottom margin */
-  flex-grow: 1; /* Allow h1 to take available space on the left */
+main h1 {
+  color: #5599e6 !important; /* Added !important to force this style */
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  margin: 10px 0;
+  flex-grow: 1;
 }
+
+
 
 /* Navigation Styles */
 nav {
