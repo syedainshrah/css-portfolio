@@ -10,6 +10,7 @@
     justify-content: space-around; /* Space between cards */
     margin-top: 20px; /* Space above cards */
     flex-wrap: wrap; /* Allow cards to wrap */
+    color: white;
   }
   
   .card {

@@ -1,59 +1,48 @@
 /* Overall Header Style */
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center-aligns items */
-  background-color: #1a474f; /* Light background color */
+  justify-content: space-between; /* Distribute space between heading and nav */
+  align-items: center; /* Vertically center the content */
+  background-color: #1a474f; /* Dark background color */
   padding: 20px; /* Increased padding for better spacing */
   border-bottom: 2px solid #ddd; /* Bottom border for separation */
   margin-top: 20px; /* Added top margin */
 }
 
-/* Heading Style */
+/* Heading Style (h1) */
 h1 {
-  color: #4a90e2; /* A soothing blue color */
+  color: #4b92e3; /* Change the color to your desired color, e.g., blue */
   font-family: 'Arial', sans-serif; /* Font family */
-  font-size: 2rem; /* Reduced size of the heading */
-  text-align: center; /* Center alignment */
+  font-size: 2rem; /* Heading font size */
   margin: 10px 0; /* Reduced top and bottom margin */
-}
-
-/* Logo Image Style */
-.logo {
-  margin-bottom: 15px; /* Space below the logo */
-}
-
-.logoImage {
-  height: 70px; /* Adjusted height */
-  border-radius: 50%; /* Optional: makes image circular */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  flex-grow: 1; /* Allow h1 to take available space on the left */
 }
 
 /* Navigation Styles */
 nav {
-  width: 100%; /* Full width for nav */
+  width: auto; /* Automatic width for nav */
 }
 
 .navList {
   list-style-type: none;
   display: flex;
-  justify-content: center; /* Center items in nav */
   padding: 0;
+  margin: 0;
 }
 
 .navItem {
-  color: #333; /* Dark text color */
+  color: #f5e7e754; /* Light gray text color for nav items */
   margin: 0 10px; /* Adjusted horizontal spacing */
 }
 
 .navItem a {
-  color: #72a39c;
+  color: #f5e7e7; /* Light text color for links */
   text-decoration: none;
   font-weight: bold; /* Bold text for links */
-  transition: color 0.3s; /* Smooth transition */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 .navItem a:hover {
-  color: #4a90e2; /* Change color on hover */
+  color: #4a90e2; /* Change color on hover to blue */
   text-decoration: underline; /* Underline on hover */
 }

@@ -29,7 +29,7 @@ const About = () => {
             </ul>
           </div>
           <div className="card">
-            <h2>Experience</h2>
+            <h2 >Experience</h2>
             <p>Currently, I do not have any professional experience. I am actively seeking a good job where the environment is positive, and I can collaborate well with everyone to perform my tasks effectively.</p>
           </div>
           <div className="card">

@@ -1,45 +1,60 @@
-
+/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh; /* Adjust height as needed */
-    background-color: rgba(26, 71, 79, 0.7); /* Semi-transparent background */
-    padding: 20px; /* Padding */
-}
-
-.hero-card {
-    background-color: #3c6e6b; /* White background for the card */
-    color: #f1e8e8; /* Text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    padding: 30px; /* Padding inside the card */
-    text-align: center; /* Center text */
-    width: 90%; /* Responsive width */
-    max-width: 500px; /* Max width for larger screens */
-}
-
-.hero-card h1 {
-    font-size: 2rem; /* Heading size */
-    margin-bottom: 15px; /* Space below heading */
-}
-
-.hero-card p {
-    font-size: 1.2rem; /* Description size */
-    margin-bottom: 20px; /* Space below description */
-}
-
-.view-projects-button {
-    background-color: #264f5a; /* Button background color */
-    color: #fff; /* Button text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-.view-projects-button:hover {
-    background-color: #357ab8; /* Darker shade on hover */
-}
+    background: linear-gradient(135deg, #5eaa9f, #99adc3); /* Beautiful background gradient */
+    height: 90vh;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-card {
+    background: #559ea7;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image {
+    border-radius: 50%;  /* Make the image circular */
+    object-fit: cover;  /* Ensures the image is contained within the circle */
+    border: 5px solid #fff;  /* Optional: adds a white border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for a better effect */
+  }
+  
+  /* Heading and Description */
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Style */
+  .view-projects-button {
+    padding: 10px 20px;
+    background-color: #36575c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-projects-button:hover {
+    background-color: #72a39c;
+  }
+  
