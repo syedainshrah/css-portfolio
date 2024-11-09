@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNode } from 'react-icons/fa'; // Importing colorful icons
-import "./about.css";
+import "./About.css";
 
 const About = () => {
     return (
