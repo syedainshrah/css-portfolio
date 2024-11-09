@@ -46,3 +46,86 @@ nav {
   color: #4a90e2; /* Change color on hover to blue */
   text-decoration: underline; /* Underline on hover */
 }
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1024px (tablets) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.5rem; /* Decrease font size on tablet */
+  }
+
+  .navList {
+    margin-top: 10px; /* Add some space between the heading and nav on tablets */
+  }
+
+  .navItem a {
+    font-size: 1rem; /* Smaller font size on tablets */
+  }
+}
+
+/* For screens smaller than 768px (mobile landscape/tablet portrait) */
+@media (max-width: 768px) {
+  main {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center items on mobile */
+    width: 100%; /* Ensure nav items take up full width */
+    margin-top: 20px; /* Space between the heading and the nav links */
+  }
+
+  .navItem {
+    margin: 10px 0; /* Adjust vertical spacing on mobile */
+  }
+
+  .navItem a {
+    font-size: 1rem; /* Slightly smaller font size */
+    text-align: center; /* Center align text on mobile */
+  }
+}
+
+/* For very small screens (mobile portrait) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.1rem; /* Smaller heading size */
+  }
+
+  .navItem a {
+    font-size: 0.9rem; /* Further decrease font size */
+  }
+}
+
+/* For mobile menu: */
+.hamburger {
+  display: none; /* Initially hidden */
+  font-size: 2rem;
+  color: #f5e7e7;
+  cursor: pointer;
+}
+
+/* For very small screens (mobile landscape or portrait) */
+@media (max-width: 768px) {
+  /* Show hamburger menu on small screens */
+  .hamburger {
+    display: block;
+  }
+
+  .navList {
+   
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navList.open {
+    display: flex; /* Show nav list when hamburger menu is clicked */
+  }
+}

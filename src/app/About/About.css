@@ -1,30 +1,104 @@
+/* General styles for the about-container */
 .about-container {
-    max-width: 800px; /* Maximum width of the container */
-    margin: 0 auto; /* Center align */
-    padding: 20px; /* Padding around the content */
-    text-align: center; /* Center align text */
+  padding: 20px;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards container layout */
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(135deg, #f4f4f9, #d1d1d1); /* Light to dark gradient */
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px; /* Default width of cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.card ul li i {
+  margin-right: 10px;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #d1d1d1, #f4f4f9); /* Reverse the gradient on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and mobile) */
+@media (max-width: 768px) {
+  .about-container h1 {
+    font-size: 2rem;
   }
-  
+
   .cards-container {
-    display: flex;
-    justify-content: space-around; /* Space between cards */
-    margin-top: 20px; /* Space above cards */
-    flex-wrap: wrap; /* Allow cards to wrap */
-    color: white;
+    justify-content: center; /* Center the cards when they wrap */
   }
-  
+
   .card {
-    background-color: #557173; /* Card background color */
-    border: 1px solid #164f58; /* Border around cards */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Inner padding */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 30%; /* Width of each card */
-    margin: 10px; /* Margin around cards */
-    transition: transform 0.2s; /* Transition for hover effect */
+    width: 100%; /* Cards will take full width on small screens */
+    margin-bottom: 20px;
   }
-  
-  .card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+
+  .card h2 {
+    font-size: 1.25rem;
   }
-  
+
+  .card ul li {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+/* For very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .about-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card ul li {
+    font-size: 0.85rem; /* Even smaller font size */
+  }
+}
